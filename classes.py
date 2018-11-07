@@ -2,6 +2,7 @@
 Model for aircraft flights
 """
 
+
 class Flight:
     """
     A flight with a particular passenger aircraft.
@@ -34,7 +35,7 @@ class Flight:
     def aircraft_model(self):
         return self._aircraft.model()
 
-    def allocate_seat(seat, passenger):
+    def allocate_seat(self, seat, passenger):
         """Allocate a seat to a passenger.
 
         Args:
@@ -79,9 +80,29 @@ class Aircraft:
         return self._model
 
     def seating_plan(self):
-        return (range(1, self._num_rows + 1), "ABCDEFGHJK"[:self._num_seats_per_row])
+        return (
+            range(1, self._num_rows + 1),
+            "ABCDEFGHJK"[:self._num_seats_per_row]
+        )
 
 
-a = Aircraft("G-EUPT", "Airbus A319", num_rows=22, num_seats_per_row=6)
-print(a.seating_plan())
-print(a.model())
+# a = Aircraft("G-EUPT", "Airbus A319", num_rows=22, num_seats_per_row=6)
+# print(a.seating_plan())
+# print(a.model())
+
+class Human:
+    def say_name(self):
+        return self._name
+
+
+class Male(Human):
+    def __init__(self, name):
+        self._name = name
+
+    def walk(self):
+        return "I'm walking!"
+
+
+c = Male(name="Bolaji")
+print(c.say_name())  # this should print out the name
+print(c.walk())  # this should print out I'm walking
