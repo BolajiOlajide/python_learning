@@ -63,6 +63,7 @@ departure = DT.datetime(year=2018, month=1, day=7,
                         hour=11, minute=30, tzinfo=cet)
 
 arrival = DT.datetime(year=2018, month=1, day=7,
-                      hour=13, minute=5, tzinfo=DT.timezone.utc)  # specify utc timezone
+                      hour=13, minute=5, tzinfo=DT.timezone.utc)
+# specify utc timezone
 
 print(arrival - departure)  # this is how long the flight took
