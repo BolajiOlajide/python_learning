@@ -12,11 +12,11 @@ class Example:
     @age.setter
     def age(self, value):
         if value > Example.MAX_AGE:
-            raise ValueError('You are way too old, lol.')
+            raise ValueError("You are way too old, lol.")
         self._age = value
 
 
-e = Example('Jone Doe', 50)
+e = Example("Jone Doe", 50)
 
 print(e.name)
 print(e.age)

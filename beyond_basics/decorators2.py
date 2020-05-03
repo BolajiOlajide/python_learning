@@ -13,10 +13,10 @@ class CallCount:
 
 @CallCount
 def hello(name):
-    print('hello {}'.format(name))
+    print("hello {}".format(name))
 
 
-print(hello('Bolaji'))
-print(hello('Proton'))
-print(hello('Moto'))
+print(hello("Bolaji"))
+print(hello("Proton"))
+print(hello("Moto"))
 print(hello.count)

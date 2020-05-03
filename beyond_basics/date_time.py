@@ -13,12 +13,7 @@ print(DT.date(year=2014, month=8, day=20))
 # construct the time (order = hour, minute, second, microsecond)
 print(DT.time(23, 12, 45, 345123))
 # you can do this using keyword args if you forget the order
-print(DT.time(
-    hour=23,
-    minute=12,
-    second=45,
-    microsecond=345123
-))
+print(DT.time(hour=23, minute=12, second=45, microsecond=345123))
 
 
 # DateTime is a combination of both day and time
@@ -59,11 +54,11 @@ print(dt)
 cet = DT.timezone(DT.timedelta(hours=1), "CET")  # CET == GMT +1
 
 # calculate departure and arrival time using the timezone created above
-departure = DT.datetime(year=2018, month=1, day=7,
-                        hour=11, minute=30, tzinfo=cet)
+departure = DT.datetime(year=2018, month=1, day=7, hour=11, minute=30, tzinfo=cet)
 
-arrival = DT.datetime(year=2018, month=1, day=7,
-                      hour=13, minute=5, tzinfo=DT.timezone.utc)
+arrival = DT.datetime(
+    year=2018, month=1, day=7, hour=13, minute=5, tzinfo=DT.timezone.utc
+)
 # specify utc timezone
 
 print(arrival - departure)  # this is how long the flight took

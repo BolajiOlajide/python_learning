@@ -26,7 +26,7 @@ print("callable(list.append) = {}".format(callable(list.append)))
 
 class CallMe:
     def __call__(self):
-        print('Called!')
+        print("Called!")
 
 
 c = CallMe()

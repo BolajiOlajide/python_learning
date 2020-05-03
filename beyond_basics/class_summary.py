@@ -9,7 +9,7 @@ class Foo:
 
     @staticmethod
     def a_static_method():
-        return 'No dependency on instance of the class, just lives in class'
+        return "No dependency on instance of the class, just lives in class"
 
     @classmethod
     def a_class_method(cls):

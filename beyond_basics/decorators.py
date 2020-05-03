@@ -15,17 +15,17 @@ def escape_unicode(f):
 
 @escape_unicode
 def vegetable():
-    return 'blomkåi'
+    return "blomkåi"
 
 
 @escape_unicode
 def animal():
-    return 'bjørn'
+    return "bjørn"
 
 
 @escape_unicode
 def mineral():
-    return 'stål'
+    return "stål"
 
 
 print(vegetable())

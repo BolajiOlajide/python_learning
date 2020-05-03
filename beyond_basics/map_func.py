@@ -1,8 +1,8 @@
 # to run a function on a collection (every single item in it)
 # you can make use of the map method
 
-ords = map(ord, 'The quick brown fox')
-print(ords, '\n')
+ords = map(ord, "The quick brown fox")
+print(ords, "\n")
 
 # map() is lazy - it only produces values as they're needed
 # the result of map is a generator object

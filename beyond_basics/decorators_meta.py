@@ -17,13 +17,14 @@ def noop(f):
     @functools.wraps(f)
     def noop_wrapper():
         return f()
+
     return noop_wrapper
 
 
 @noop
 def hello():
     """Prints the word, hello"""
-    return 'Hello'
+    return "Hello"
 
 
 print(hello.__name__)
@@ -37,18 +38,18 @@ def check_something(x):
         @functools.wraps(f)
         def wraps(*args):
             if x in args:
-                raise ValueError(
-                    '{} should not be part of the args'.format(x)
-                )
+                raise ValueError("{} should not be part of the args".format(x))
             return f(*args)
+
         return wraps
+
     return validate
 
 
-@check_something('name')
+@check_something("name")
 def init(*args):
     return True
 
 
-print(init('Bolaji', 'James', 'Prowse', 'Ole Gunnar Solksjaer'))
-print(init('love', 'name'))
+print(init("Bolaji", "James", "Prowse", "Ole Gunnar Solksjaer"))
+print(init("love", "name"))

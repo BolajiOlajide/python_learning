@@ -36,15 +36,15 @@ class ShippingContainer:
         self.serial = ShippingContainer._get_next_serial()
 
 
-c1 = ShippingContainer('MAE', 'clothes')
+c1 = ShippingContainer("MAE", "clothes")
 print(c1.serial)
 
-c2 = ShippingContainer('WOL', 'tools')
+c2 = ShippingContainer("WOL", "tools")
 print(c2.serial)
 
-c3 = ShippingContainer.create_empty('YME')
+c3 = ShippingContainer.create_empty("YME")
 print(c3.serial)
 
-c4 = ShippingContainer.create_with_items('ONE', ('Rice', 'Beans', 'Egusi'))
+c4 = ShippingContainer.create_with_items("ONE", ("Rice", "Beans", "Egusi"))
 print(c4.serial)
 print(c4.contents)

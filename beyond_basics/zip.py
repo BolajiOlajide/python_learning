@@ -8,13 +8,13 @@ sunday = [10, 20, 19, 14, 26, 41, 29, 38]
 for item in zip(sunday, monday, tuesday):
     print(item)
 
-print('===================')
+print("===================")
 daily = [sunday, monday, tuesday]
 
 for item in zip(*daily):
     pp(item)
 
-print('===================')
+print("===================")
 
 transposed = list(zip(*daily))
 print(transposed)

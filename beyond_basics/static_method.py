@@ -14,8 +14,8 @@ class ShippingContainer:
         self.serial = ShippingContainer._get_next_serial()
 
 
-c1 = ShippingContainer('MAE', 'clothes')
+c1 = ShippingContainer("MAE", "clothes")
 print(c1.serial)
 
-c2 = ShippingContainer('WOL', 'tools')
+c2 = ShippingContainer("WOL", "tools")
 print(c2.serial)

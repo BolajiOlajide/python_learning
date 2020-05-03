@@ -9,8 +9,8 @@ class ShippingContainer:
         ShippingContainer.next_serial += 1
 
 
-c1 = ShippingContainer('MAE', 'clothes')
+c1 = ShippingContainer("MAE", "clothes")
 print(c1.serial)
 
-c2 = ShippingContainer('WOL', 'tools')
+c2 = ShippingContainer("WOL", "tools")
 print(c2.serial)
